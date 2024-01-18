@@ -4,7 +4,9 @@ const mysql = require('mysql')
 const app = express()
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    origin:'https://project-ashen-ten.vercel.app/'
+))
 
 
 app.listen(3000,()=>{
